@@ -20,7 +20,7 @@ const data = [
 export default function SalesRevenueChart() {
     const {data: products} = useGetCustomers()
 
-    console.log(products, "ksjnve")
+    console.log(products, "products")
     return (
         <ChartContainer>
             <Title>Sales Revenue</Title>

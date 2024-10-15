@@ -1,0 +1,66 @@
+openapi: 3.0.0
+info:
+  title: Customer Data API
+  version: 1.0.0
+paths:
+  /customers:
+    get:
+      summary: Get customer data by month
+      responses:
+        '200':
+          description: A list of customer data
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    month:
+                      type: string
+                      example: Jan
+                    newCustomers:
+                      type: integer
+                      example: 4000
+                    upCrossSelling:
+                      type: integer
+                      example: 2400
+              examples:
+                example-data:
+                  value:
+                    - month: Jan
+                      newCustomers: 4000
+                      upCrossSelling: 2400
+                    - month: Feb
+                      newCustomers: 3000
+                      upCrossSelling: 1398
+                    - month: Mar
+                      newCustomers: 2000
+                      upCrossSelling: 9800
+                    - month: Apr
+                      newCustomers: 2780
+                      upCrossSelling: 3908
+                    - month: May
+                      newCustomers: 1890
+                      upCrossSelling: 4800
+                    - month: Jun
+                      newCustomers: 2390
+                      upCrossSelling: 3800
+                    - month: Jul
+                      newCustomers: 3490
+                      upCrossSelling: 4300
+                    - month: Aug
+                      newCustomers: 3490
+                      upCrossSelling: 4300
+                    - month: Sep
+                      newCustomers: 4000
+                      upCrossSelling: 2400
+                    - month: Oct
+                      newCustomers: 3000
+                      upCrossSelling: 1398
+                    - month: Nov
+                      newCustomers: 2000
+                      upCrossSelling: 9800
+                    - month: Dec
+                      newCustomers: 2780
+                      upCrossSelling: 3908

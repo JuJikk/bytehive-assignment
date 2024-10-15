@@ -1,5 +1,4 @@
-import {ProductWrapper} from "./styles.ts";
-import {ProductItem} from "../product-item-skeleton/styles.ts";
+import {ProductItem, ProductWrapper} from "./styles.ts";
 
 const TopSellingSkeleton = () => {
     return (
