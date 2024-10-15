@@ -3,6 +3,7 @@ import { Container, ProductList, SeeAllLink, Title } from "./styles.ts";
 import { useGetProductsData } from "../../api";
 import { ProductsType } from "../../types";
 import ProductItem from "../product-item";
+import TopSellingSkeleton from "../../../skeletons/top-selling-skeleton";
 
 const TopSellingProducts = () => {
   const { data: products, isLoading, error } = useGetProductsData();
@@ -23,7 +24,7 @@ const TopSellingProducts = () => {
           </SeeAllLink>
         </>
       )}
-      {isLoading && <div>Loading...</div>}
+      {isLoading && <TopSellingSkeleton/>}
       {error && <div>Sorry, something went wrong</div>}
     </Container>
   );
