@@ -1,6 +1,6 @@
 import {setupWorker} from "msw/browser";
-import {getCustomerDataAPIMock} from "./endpoint.msw.ts";
+import {getInterviewAPIMock} from "./endpoint.msw.ts";
 
-const worker = setupWorker(...getCustomerDataAPIMock())
+const worker = setupWorker(...getInterviewAPIMock())
 
 worker.start()

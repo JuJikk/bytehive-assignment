@@ -10,6 +10,6 @@ export const ProductItem = styled.li`
     align-items: center;
     margin: 0.45rem 1rem;
     border-bottom: 1px solid #f0f0f0;
-    background: #e7e7e7;
+    background: #f4f4f4;
     height: 55px;
 `;

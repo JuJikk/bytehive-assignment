@@ -32,11 +32,6 @@ export const HeaderArea = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    @media (max-width: 768px) {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 `;
 
 export const GridContainer = styled.div`
@@ -68,11 +63,5 @@ export const SyncButton = styled.button`
     &:focus {
         outline: none;
         box-shadow: 0 0 0 2px #e0e7ff;
-    }
-
-    @media (max-width: 768px) {
-        margin-left: 0;
-        width: 100%;
-        justify-content: center;
     }
 `;
